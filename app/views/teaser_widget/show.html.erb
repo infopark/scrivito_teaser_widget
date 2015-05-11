@@ -1,0 +1,13 @@
+<div class="teaser-widget">
+  <%= scrivito_image_tag widget, :image, class: 'img-responsive' %>
+  <div class="teaser-content">
+    <div class="headline">
+      <%= scrivito_tag :h3, widget, :headline %>
+    </div>
+    <%= scrivito_tag :div, widget, :description %>
+  </div>
+
+  <% if widget.call_to_action.present? %>
+    <%= link_to widget.call_to_action_text.presence || widget.call_to_action.title, scrivito_path(widget.call_to_action), class: 'btn btn-primary btn-block' %>
+  <% end %>
+</div>
