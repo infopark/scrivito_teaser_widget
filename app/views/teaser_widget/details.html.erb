@@ -1,10 +1,10 @@
-<div class="details-view">
-  <h4>Destination for call to action</h4>
+<%= scrivito_details_for 'Destination for call to action' do %>
   <%= scrivito_tag :div, widget, :call_to_action %>
+<% end %>
 
-  <h4>Text on call to action button</h4>
+<%= scrivito_details_for 'Text on call to action button' do %>
   <div class="alert alert-info">
     If empty, title of referenced obj is used.
   </div>
   <%= scrivito_tag :div, widget, :call_to_action_text %>
-</div>
+<% end %>
