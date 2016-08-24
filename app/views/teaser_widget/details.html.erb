@@ -1,10 +1,7 @@
-<%= scrivito_details_for 'Destination for call to action' do %>
+<%= scrivito_details_for t('scrivito_teaser_widget.details.call_to_action', default: 'Destination') do %>
   <%= scrivito_tag :div, widget, :call_to_action %>
 <% end %>
 
-<%= scrivito_details_for 'Text on call to action button' do %>
-  <div class="alert alert-info">
-    If empty, title of referenced obj is used.
-  </div>
+<%= scrivito_details_for t('scrivito_teaser_widget.details.call_to_action_text', default: 'Text on button') do %>
   <%= scrivito_tag :div, widget, :call_to_action_text %>
 <% end %>

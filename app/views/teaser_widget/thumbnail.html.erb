@@ -1,3 +1,3 @@
-<%= scrivito_thumbnail 'Teaser', image_tag("teaser.png") do %>
-  Insert a teaser with text and image.
+<%= scrivito_thumbnail t('scrivito_teaser_widget.thumbnail.title', default: 'Teaser'), image_tag("teaser.png") do %>
+  <%= t('scrivito_teaser_widget.thumbnail.description', default: 'Insert a teaser with text and image') %>
 <% end %>
