@@ -22,8 +22,5 @@ Gem::Specification.new do |gem|
     "README.md"
   ]
 
-  gem.add_dependency 'bundler'
   gem.add_dependency 'scrivito'
-
-  gem.add_development_dependency 'rake'
 end
